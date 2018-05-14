@@ -17,7 +17,7 @@ public class KnockoutRunner
 
         List<RowData> data = reader.readFile("C:\\Users\\NK\\IdeaProjects\\Knockout\\tally.xls");
         List<RowData> untalliedData = knockoutLogic.calculateKnockout(data);
-        writer.writeToExcel(untalliedData,"untallied.xls");
+        writer.writeToExcel(untalliedData, "untallied.xls");
 
     }
 }
