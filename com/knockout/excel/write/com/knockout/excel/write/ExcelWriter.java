@@ -25,7 +25,7 @@ public class ExcelWriter
             final Cell amountCell = row.createCell(0);
             final Cell identifierCell = row.createCell(1);
             amountCell.setCellValue(Double.parseDouble(currentData.getAmount()));
-            identifierCell.setCellValue(Double.parseDouble(currentData.getIdentfier()));
+            identifierCell.setCellValue(currentData.getIdentfier());
         }
         try
         {
