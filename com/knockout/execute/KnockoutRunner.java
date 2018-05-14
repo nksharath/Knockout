@@ -1,6 +1,6 @@
 package com.knockout.execute;
 
-import com.knockout.core.KnockoutLogic;
+import knockout.core.KnockoutLogic;
 import com.knockout.data.RowData;
 import com.knockout.excel.read.ExcelReader;
 import com.knockout.excel.write.ExcelWriter;
@@ -15,9 +15,9 @@ public class KnockoutRunner
         ExcelWriter writer = new ExcelWriter();
         KnockoutLogic knockoutLogic = new KnockoutLogic();
 
-        List<RowData> data = reader.readFile("C:\\Users\\NK\\IdeaProjects\\Knockout\\tally.xls");
+        List<RowData> data = reader.readFile("C:\\Users\\NK\\IdeaProjects\\Knockout\\tally2.xls");
         List<RowData> untalliedData = knockoutLogic.calculateKnockout(data);
-        writer.writeToExcel(untalliedData, "untallied.xls");
+        writer.writeToExcel(untalliedData, "untallied2.xls");
 
     }
 }

@@ -1,4 +1,4 @@
-package com.knockout.core;
+package knockout.core;
 
 import com.knockout.data.RowData;
 
