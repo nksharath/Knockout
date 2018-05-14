@@ -1,6 +1,5 @@
 package com.knockout.excel.write;
 
-
 import com.knockout.data.RowData;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -25,8 +24,8 @@ public class ExcelWriter
             final Row row = sheet.createRow(rowNum++);
             final Cell amountCell = row.createCell(0);
             final Cell identifierCell = row.createCell(1);
-            amountCell.setCellValue(currentData.getAmount());
-            identifierCell.setCellValue(currentData.getIdentfier());
+            amountCell.setCellValue(Double.parseDouble(currentData.getAmount()));
+            identifierCell.setCellValue(Double.parseDouble(currentData.getIdentfier()));
         }
         try
         {
